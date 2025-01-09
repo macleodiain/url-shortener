@@ -1,0 +1,6 @@
+<%# This will create a div element for each url in the array and give it a dynamically assigned name eg class="link_1" %>
+<%= tag.div id: dom_id(link) do %>
+  <%= link.to_param %>
+  <%= link_to link.url, link_path(link) %>
+<% end %>
+
